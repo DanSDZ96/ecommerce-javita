@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.about-container {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.about-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text h3 {
+    margin-top: 30px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+

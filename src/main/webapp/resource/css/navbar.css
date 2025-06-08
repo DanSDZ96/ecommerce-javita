@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+img {
+    width: 30px;
+}
+
+/* Assicura che il body non dia padding attorno */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar completamente centrata e appiccicata in alto */
+.navbar-custom {
+    position: relative; /* oppure fixed/top-0 se la vuoi sticky */
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    border: none;
+    background-color: #007bff;
+    padding: 12px 30px;
+    height: 70px; /* Forza una altezza minima */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar-custom .nav-link {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-custom .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* effetto evidenza */
+}
+
+.search-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.search-container form {
+    display: flex;
+    width: 60%;
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.search-container input[type="search"] {
+    flex: 1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+}
+
+.search-container button {
+    background-color: #e6f4ff;  /* Azzurro chiaro */
+    color: #007bff;             /* Blu acceso */
+    padding: 0 20px;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #cce6ff;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+
+.user-info p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Pulsante tema coerente */
+#toggleThemeBtn {
+    padding: 6px 16px;
+    font-size: 14px;
+    background-color: white;
+    color: #007bff;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#toggleThemeBtn:hover {
+    background-color: #e6f4ff;
+    color: #0056b3;
+}
+
+/* ---------- Navbar in modalità scura ---------- */
+body.dark-mode .navbar-custom {
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .navbar-custom .nav-link {
+    color: #f1f1f1;
+}
+
+body.dark-mode .navbar-custom .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .user-info {
+    color: #f1f1f1;
+}
+
+body.dark-mode .search-container form {
+    background-color: #2a2a2a;
+}
+
+body.dark-mode .search-container input[type="search"] {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+}
+
+body.dark-mode .search-container button {
+    background-color: #007bff;
+    color: white;
+}
+
+body.dark-mode .search-container button:hover {
+    background-color: #3399ff;
+}
+
+body.dark-mode #toggleThemeBtn {
+    background-color: #f1f1f1;
+    color: #1a1a1a;
+    border-color: #f1f1f1;
+}
+
+body.dark-mode #toggleThemeBtn:hover {
+    background-color: #cce6ff;
+    color: #0056b3;
+}
+
+
+/*Pulsante toggle per sole e luna*/
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: relative;
+  background-color: #2196F3;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  top: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+  z-index: 2; /* Sopra le icone */
+}
+
+/* Sposta il pallino a destra quando checked */
+.theme-switch input:checked + .slider::before {
+  transform: translateX(30px);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  line-height: 1;
+  z-index: 1; /* Sotto al pallino */
+  pointer-events: none;
+}
+
+.sun {
+  left: 8px;
+  color: #000000;
+}
+
+.moon {
+  right: 8px;
+  color: #000000;
+}
