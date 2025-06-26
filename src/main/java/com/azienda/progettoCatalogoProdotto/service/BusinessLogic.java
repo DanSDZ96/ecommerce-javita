@@ -1,6 +1,5 @@
 package com.azienda.progettoCatalogoProdotto.service;
 
-import java.sql.Blob;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.ArrayList;
