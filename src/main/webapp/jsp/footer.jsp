@@ -4,14 +4,14 @@
 <div class="footer-custom mt-5">
     <div class="footer-top">
         <div class="footer-section footer-left">
-            <p><strong>Sede Legale:</strong> Via delle Innovazioni, 42 - 00100 Roma (RM)</p>
-            <p><strong>Partita IVA:</strong> 12345678901</p>
+            <p><strong>Sede Legale:</strong> Piazza Schiano, 23 - 80124 Napoli (NA)</p>
+            <p><strong>Partita IVA:</strong> 11122233344</p>
         </div>
 
         <div class="footer-section footer-center">
-            <p><strong>Sede:</strong> +39 06 1234567</p>
-            <p><strong>Customer:</strong> +39 06 7654321</p>
-            <p><strong>Amm.:</strong> +39 06 9876543</p>
+            <p><strong>Sede:</strong> +39 081 1234567</p>
+            <p><strong>Customer:</strong> +39 06 8901234</p>
+            <p><strong>Amm.:</strong> +39 02 9876543</p>
         </div>
 
         <div class="footer-section footer-right">
@@ -32,7 +32,7 @@
     </div>
 
     <div class="footer-bottom">
-        <p>&copy; <%= java.time.Year.now() %> Tutti i diritti riservati.</p>
-        <p>Team: Roberto Corona, Francesco Di Iorio, Gianluca Fabiani, Luca Bassanetti, Daniel Schiano di Zenise</p>
+        <p>&copy; <%= 2025 %> Tutti i diritti riservati.</p>
+        <p>Daniel Schiano di Zenise</p>
     </div>
 </div>
