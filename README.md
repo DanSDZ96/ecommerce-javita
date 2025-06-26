@@ -49,6 +49,8 @@ Implementa funzionalità CRUD, gestione utenti e carrello, sessione autenticata,
 ---
 
 ## 🚧 Refactor con Spring Boot (in corso)
+📝 _Nota_ : Questa parte del progetto è ancora in fase di sviluppo, 
+            vuole servire a potenziare le skills riguardanti Spring Boot 
 
 - ✅ Branch dedicato: `refactor/spring-boot`
 - 🔧 Obiettivo: riscrivere il progetto usando:
@@ -61,7 +63,11 @@ Implementa funzionalità CRUD, gestione utenti e carrello, sessione autenticata,
 
 ---
 
+📝 _Nota_: La cronologia dei commit è stata volutamente mantenuta per evidenziare l'utilizzo di Git come sistema di versionamento.
+
 ## 👨‍💻 Autore
 
 **Daniel Schiano di Zenise**  
 GitHub: [@DanSDZ96](https://github.com/DanSDZ96)
+
+
